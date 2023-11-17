@@ -8,10 +8,14 @@
 `df=pd.DataFrame([100,101,102],[1,2])`
 
 ## Define data frame contain index
-`df=pd.DataFrame(id:[100,101,102], numbers:[1,2,3], index:['a','b','c'])`
+`df=pd.DataFrame({'id':[100,101,102], 'color':[1,2,3]}, index=['a','b','c'])`
 
 ## Read csv - xlsx file
 `df=pd.read_csv('file-name.csv)`
 `df=pd.read_excel('file-name.xlsx)`
+
+## Dipict top 10 rows (default number is 5)
+`df.head()`
+`df.head(10)`
 
 ## 
