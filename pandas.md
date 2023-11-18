@@ -43,3 +43,14 @@
 ## Depict how many Null values are exist
 `df.isnull().sum()`
 
+## Count how many 2 values are in column "Age"
+`df[df.Age==2].count()`
+
+## Fill Null Values in column "Age" by 2 (for instance)
+`df['Age'].fillna(value=2, inplace=True)` *use inplace to make changes applyed*
+
+## Remove Null Values in column "Age"
+`df['Age'].dropna(how='all', inplace=True)`
+
+
+
