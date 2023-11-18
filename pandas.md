@@ -14,8 +14,32 @@
 `df=pd.read_csv('file-name.csv)`
 `df=pd.read_excel('file-name.xlsx)`
 
-## Dipict top 10 rows (default number is 5)
+## Depict top 10 rows (default number is 5)
 `df.head()`
-`df.head(10)`
+`df.head(10)` or `df[:10]`
 
-## 
+## Depict bottom 10 rows (default number is 5)
+`df.tail()`
+`df.tail(10)`
+
+## Depict column namely "Age"
+`df.Age` or `df['Age']`
+
+## Depict 2nd row of column namely "Age"
+`df.['Age'][1]`
+
+## Add New Column namely "id" from index values
+`df['id']=df.index`
+
+## Copy whole data of df to temp
+`temp=df.copy()`
+
+## Shape or Size
+`df.shape`
+
+## Convert data to True and False based on being Not Null
+`df.notnull()`
+
+## Depict how many Null values are exist
+`df.isnull().sum()`
+
