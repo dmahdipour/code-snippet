@@ -67,3 +67,8 @@
 ### Rename Column namely 'Age' to 'During'
 `df.rename(columns={'Age':'During'}, inplace=True)`
 
+### Get columns name and data type
+`df.columns`
+`df.dtypes` or for "Age" column `df.Age.dtypes`
+
+###
