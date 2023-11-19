@@ -4,8 +4,8 @@
 ### Import
 `import pandas as pd`
 
-### Define data frame (Table with 2 rows and 3 columns
-`df=pd.DataFrame([100,101,102],[1,2])`
+### Define data frame (Table with 2 rows and 3 columns)
+`df=pd.DataFrame([100,101,102], [1,2])`
 
 ### Define data frame contain index
 `df=pd.DataFrame({'id':[100,101,102], 'color':['red','blue','green']}, index=['a','b','c'])`
