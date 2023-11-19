@@ -64,4 +64,6 @@
 ### Replace A with another B in Column namely "Name"
 `df.Name.replace('A', 'B', inplace=True)`
 
-### 
+### Rename Column namely 'Age' to 'During'
+`df.rename(columns={'Age':'During'}, inplace=True)`
+
