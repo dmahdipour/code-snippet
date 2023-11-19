@@ -11,15 +11,15 @@
 `df=pd.DataFrame({'id':[100,101,102], 'color':['red','blue','green']}, index=['a','b','c'])`
 
 ### Read csv - xlsx file
-`df=pd.read_csv('file-name.csv)`
+`df=pd.read_csv('file-name.csv)`<br>
 `df=pd.read_excel('file-name.xlsx)`
 
 ### Depict top 10 rows (default number is 5)
-`df.head()`
+`df.head()`<br>
 `df.head(10)` or `df[:10]`
 
 ### Depict bottom 10 rows (default number is 5)
-`df.tail()`
+`df.tail()`<br>
 `df.tail(10)`
 
 ### Depict column namely "Age"
