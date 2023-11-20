@@ -77,7 +77,7 @@
 `df.columns=['a','b',...]`
 
 ### Get columns name and data type
-`df.columns`<br>
+`df.columns` *to show them in list:* `df.columns.tolist()`<br>
 `df.dtypes` *or for "Age" column:* `df.Age.dtypes` *'str' is shown as object*
 
 ### Conver string dtype of "Age" to float
