@@ -16,14 +16,14 @@
 
 ### Depict top 10 rows (default number is 5)
 `df.head()`<br>
-`df.head(10)` or `df[:10]`
+`df.head(10)` *or* `df[:10]`
 
 ### Depict bottom 10 rows (default number is 5)
 `df.tail()`<br>
 `df.tail(10)`
 
 ### Depict column namely "Age"
-`df.Age` or `df['Age']`
+`df.Age` *or* `df['Age']`
 
 ### Depict 2nd row of column namely "Age"
 `df.['Age'][1]`
@@ -62,7 +62,7 @@
 `df.drop(index=0, axis=0, inplace=True)`
 
 ### Replace A with another B in Column namely "Name"
-`df.Name.replace('A', 'B', inplace=True)` or `df.Name=df.Name.replace('A', 'B')`
+`df.Name.replace('A', 'B', inplace=True)` *or* `df.Name=df.Name.replace('A', 'B')`
 
 ### Change strings to Upper or Lower cases
 `df.Name.str.upper()`<br>
@@ -78,7 +78,7 @@
 
 ### Get columns name and data type
 `df.columns`<br>
-`df.dtypes` or for "Age" column `df.Age.dtypes` *'str' is shown as object*
+`df.dtypes` *or for "Age" column:* `df.Age.dtypes` *'str' is shown as object*
 
 ### Conver string dtype of "Age" to float
 `df.Age.astype(float)`
