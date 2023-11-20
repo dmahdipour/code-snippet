@@ -64,15 +64,28 @@
 ### Replace A with another B in Column namely "Name"
 `df.Name.replace('A', 'B', inplace=True)` or `df.Name=df.Name.replace('A', 'B')`
 
-### Rename Column namely 'Age' to 'During'
-`df.rename(columns={'Age':'During'}, inplace=True)`
-
-### Get columns name and data type
-`df.columns` <br>
-`df.dtypes` or for "Age" column `df.Age.dtypes`
-
 ### Change strings to Upper or Lower cases
 `df.Name.str.upper()`<br>
 `df.Name.str.lower()`
+
+### Count group of values
+`df.Age.value_counts()`
+
+### Rename Column namely 'Age' to 'During'
+`df.rename(columns={'Age':'During'}, inplace=True)`
+#### Rename whole Columns 
+`df.columns=['a','b',...]`
+
+### Get columns name and data type
+`df.columns`<br>
+`df.dtypes` or for "Age" column `df.Age.dtypes` *'str' is shown as object*
+
+### Conver string dtype of "Age" to float
+`df.Age.astype(float)`
+
+### Categorize column "Age" and get codes ang categories' name
+`df.Age=df.Age.astype('category')`<br>
+`df.Age.cat.codes`<br>
+`df.Age.cat.categories`
 
 ### 
