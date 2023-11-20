@@ -85,7 +85,7 @@
 
 ### Categorize column "Age" and get codes ang categories' name
 `df.Age=df.Age.astype('category')`<br>
-`df.Age.cat.codes`<br>
+`df.Age.cat.codes` *-1 is shown for NaN values*<br>
 `df.Age.cat.categories`
 
 ### 
