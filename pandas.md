@@ -32,7 +32,7 @@
 `df['id']=df.index`
 
 ### Copy whole data of df to temp
-`temp=df.copy()`
+`temp=df.copy()` *for selecting columns namely A and B:* `temp=df[['A','B']]`
 
 ### Shape or Size
 `df.shape`
@@ -65,9 +65,9 @@
 `df.Name.replace('A', 'B', inplace=True)` *or* `df.Name=df.Name.replace('A', 'B')`
 
 ### Remove "A" from values of Column namely "Name" from right, left and both side of string
-*for right: * `df.Name.str.rstrip('A')`<br>
-*for left:  * `df.Name.str.lstrip('A')`<br>
-*for both: * `df.Name.str.strip('A')`
+*for right:* `df.Name.str.rstrip('A')`<br>
+*for left:* `df.Name.str.lstrip('A')`<br>
+*for both:* `df.Name.str.strip('A')`
 
 ### Change strings to Upper or Lower cases
 `df.Name.str.upper()`<br>
