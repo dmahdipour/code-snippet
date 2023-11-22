@@ -64,6 +64,11 @@
 ### Replace A with another B in Column namely "Name"
 `df.Name.replace('A', 'B', inplace=True)` *or* `df.Name=df.Name.replace('A', 'B')`
 
+### Remove "A" from values of Column namely "Name" from right, left and both side of string
+*for right: * `df.Name.str.rstrip('A')`<br>
+*for left:  * `df.Name.str.lstrip('A')`<br>
+*for both: * `df.Name.str.strip('A')`
+
 ### Change strings to Upper or Lower cases
 `df.Name.str.upper()`<br>
 `df.Name.str.lower()`
