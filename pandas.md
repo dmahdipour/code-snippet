@@ -96,7 +96,8 @@
 `df.Age.cat.categories`
 
 ### 30- Sort data by column namely "Age"
-`df.sort_values(by="Age", ascending=True, inplace=True)`
+`df.sort_values(by="Age", ascending=True, inplace=True)`<br>
+*for one column:* `df.Age.sort_values()`
 
 ### 31- Remove rows contain a value for strings and greater(or less) than a value for numbers 
 `df=df[df.Name.contains('A')==Flase]` *for special signs like \* use \\**<br>
@@ -121,9 +122,14 @@
 *to reset index values (0~ ...):* `df.reset_index(inplace=True)`
 
 ### 36- Access to rows by index of them
-`df.iloc[[10, 30]]` *min, max, mean, argmax , etc can be used instead of list*
+`df.iloc[[10, 30]]` *min, max, mean, argmax , etc can be used instead of list*<br>
 *to get value of special columns:* `df.iloc[[10]]["Age"]` *or* `df.iloc[[10]].Age` *or* `df.loc[10, "Age"]` *or* `df.at[10, "Age"]`
 
-### 37- 
+### 37- Filter data frame by column namely Age value
+`df[df.Age>10]`
+*to depict just True or False for all of data:* `df.Age>10`
 
-=
+
+
+
+
