@@ -127,9 +127,10 @@
 
 ### 37- Filter data frame by column namely Age value
 `df[df.Age>10]` *to filter by more than one columns:* `df(df.Age>10) & (df.Name.contains('A'))]`<br>
-*to depict just True or False for all of data:* `df.Age>10`
+*to depict just True or False for all of data:* `df.Age>10`<br>
+*to check whether they exist in a list or not:* `df.Age.isin([10,20,30])`
 
-
-
+### 38- Group data by a column value
+`df.groupby("Age")` *to count, mean, min, max, etc:* `df.groupby("Age").count()`
 
 
