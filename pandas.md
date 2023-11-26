@@ -96,7 +96,7 @@
 `df.Age.cat.categories`
 
 ### 30- Sort data by column namely "Age"
-`df.sort_values(by="Age", ascending=True)`
+`df.sort_values(by="Age", ascending=True, inplace=True)`
 
 ### 31- Remove rows contain a value for strings and greater(or less) than a value for numbers 
 `df=df[df.Name.contains('A')==Flase]` *for special signs like \* use \\**<br>
@@ -115,5 +115,15 @@
 *list of values* `df.Age.value_counts().values`<br>
 *unique of values* `df.Age.uniques()`
 
-### 35- 
+### 35- Chose the column Age as index of data frame
+`df.set_index("Age", inplace=True)`<br>
+*to remove the name of index column or assign a name:* `df.inedx.name="AgeIndex"` `df.index.name=None` 
+*to reset index values (0~ ...):* `df.reset_index(inplace=True)`
 
+### 36- Access to rows by index of them
+`df.iloc[[10, 30]]` *min, max, mean, argmax , etc can be used instead of list*
+*to get value of special columns:* `df.iloc[[10]]["Age"]` *or* `df.iloc[[10]].Age` *or* `df.loc[10, "Age"]` *or* `df.at[10, "Age"]`
+
+### 37- 
+
+=
