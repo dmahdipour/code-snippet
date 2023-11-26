@@ -93,4 +93,5 @@
 `df.Age.cat.codes` *-1 is shown for NaN values*<br>
 `df.Age.cat.categories`
 
-### 
+### Depict a general details of coulmns e.g. count, mean, std, min, etc.
+`df.describe()`
