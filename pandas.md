@@ -126,7 +126,7 @@
 *to get value of special columns:* `df.iloc[[10]]["Age"]` *or* `df.iloc[[10]].Age` *or* `df.loc[10, "Age"]` *or* `df.at[10, "Age"]`
 
 ### 37- Filter data frame by column namely Age value
-`df[df.Age>10]`
+`df[df.Age>10]` *to filter by more than one columns:* `df(df.Age>10) & (df.Name.contains('A'))]`<br>
 *to depict just True or False for all of data:* `df.Age>10`
 
 
