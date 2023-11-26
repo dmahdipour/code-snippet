@@ -100,9 +100,17 @@
 
 ### 31- Remove rows contain a value for strings and greater(or less) than a value for numbers 
 `df=df[df.Name.contains('A')==Flase]` *for special signs like \* use \\**<br>
-`df=df[df.Age]>100]`
+`df=df[df.Age>100]`
 
-### 32- Depict a general details of coulmns e.g. count, mean, std, min, etc.
-`df.describe()`
+### 32- Depict a general details of columns e.g. count, mean, std, min, etc.
+`df.describe()` *for bit shorter info:* `df.info()`
+
+### 33- Depict memory usage of each columns
+`df.memory_usage(deep=True)`
+
+### 32- Depict count, mean, std, min, etc of data or each columns
+`df.max()` *or* `df.Age.max()` *ro get index of them add arg to them:* `df.argmax()`<br>
+`df.Age.value_counts(dropna=False)` *if do not want to count null values, change it to True*
+
 
 
