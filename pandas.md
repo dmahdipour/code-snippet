@@ -131,6 +131,8 @@
 *to check whether they exist in a list or not:* `df.Age.isin([10,20,30])`
 
 ### 38- Group data by a column value
-`df.groupby("Age")` *to count, mean, min, max, etc:* `df.groupby("Age").count()`
+`df.groupby("Age")` *to count, mean, min, max, etc:* `df.groupby("Age").count()` *or* `df.groupby("Age").Name.sum()`<br>
+*to get more details based by groups:* `df.groupby("Age").Age.agg(["count", "sum", "min", "max"])`
+
 
 
