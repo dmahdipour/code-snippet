@@ -100,7 +100,7 @@
 
 ### 31- Remove rows contain a value for strings and greater(or less) than a value for numbers 
 `df=df[df.Name.contains('A')==Flase]` *for special signs like \* use \\**<br>
-`df=df[df["Age"]>100]`
+`df=df[df.Age]>100]`
 
 ### 32- Depict a general details of coulmns e.g. count, mean, std, min, etc.
 `df.describe()`
