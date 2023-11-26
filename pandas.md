@@ -14,6 +14,10 @@
 `df=pd.read_csv('file-name.csv)`<br>
 `df=pd.read_excel('file-name.xlsx)`
 
+### Save csv - xlsx file
+`df=pd.to_csv('file-name.csv)`<br>
+`df=pd.to_excel('file-name.xlsx)`
+
 ### Depict top 10 rows (default number is 5)
 `df.head()`<br>
 `df.head(10)` *or* `df[:10]`
