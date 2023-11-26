@@ -110,7 +110,7 @@
 
 ### 34- Depict count, mean, std, min, etc of data or each columns
 `df.max()` *or* `df.Age.max()` *ro get index of them add arg to them:* `df.argmax()`<br>
-`df.Age.value_counts(dropna=False)` *if do not want to count null values, change it to True (default is True) -- for making them normalized, add normalize=True*
+`df.Age.value_counts(dropna=False)` *if do not want to count null values, change it to True (default is True) -- for making them normalized, add `normalize=True`*
 
 ### 35- 
 
