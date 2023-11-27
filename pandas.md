@@ -118,29 +118,39 @@
 *list of values* `df.Age.value_counts().values`<br>
 *unique of values* `df.Age.uniques()`
 
-### 35- Chose the column Age as index of data frame
+### 35- Dammy variables
+*to change unique values of column Age:* `df.Age.map({1:'One', 2:'Two'})`
+*to make a word bag specially for categories:* `df.get_dummies(df.Age)`
+
+### 36- Choose the column Age as index of data frame
 `df.set_index("Age", inplace=True)`<br>
 *to remove the name of index column or assign a name:* `df.inedx.name="AgeIndex"` `df.index.name=None` 
 *to reset index values (0~ ...):* `df.reset_index(inplace=True)`
 
-### 36- Access to rows by index of them
+### 37- Access to rows by index of them
 `df.iloc[[10, 30]]` *min, max, mean, argmax , etc can be used instead of list*<br>
 *to get value of special columns:* `df.iloc[[10]]["Age"]` *or* `df.iloc[[10]].Age` *or* `df.loc[10, "Age"]` *or* `df.at[10, "Age"]`
 
-### 37- Filter data frame by column namely Age value
+### 38- Filter data frame by column namely Age value
 `df[df.Age>10]` *to filter by more than one columns:* `df(df.Age>10) & (df.Name.contains('A'))]`<br>
 *to depict just True or False for all of data:* `df.Age>10`<br>
 *to check whether they exist in a list or not:* `df.Age.isin([10,20,30])`
 
-### 38- Group data by a column value
+### 39- Group data by a column value
 `df.groupby("Age")` *to count, mean, min, max, etc:* `df.groupby("Age").count()` *or* `df.groupby("Age").Name.sum()`<br>
 *to get more details based by groups:* `df.groupby("Age").Age.agg(["count", "sum", "min", "max"])`
 
-### 39- DataFrame Iteration
+### 40- DataFrame Iteration
 `for index, row in df.iterrows():`<br>
   ....
 
-### 40- Depict some rows randomly
+### 41- Depict some rows randomly
 `df.sample(n=3, random_state=65)` *if want to have same results in different excution, use random_state*<br>
-*to select 5 percent of whoel data frame:* `df.sample(frac=0.05)`
+*to select 5 percent of whole data frame:* `df.sample(frac=0.05)`
+
+### 42- Depict Duplicated values
+`df.duplicated()` *or for checking column namely Age:* `df.Age.duplicated()`<br>
+*to get number of duplicated values:* `df.Age.duplicated().sum()`<br>
+*to remove duplicated values:* `df.drop_duplicated(inplace=True)`
+
 
