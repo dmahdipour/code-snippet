@@ -16,9 +16,9 @@
 `df=pd.read_pickle('file_name.pkl')`
 
 ### 6- Save csv - xlsx file
-`df=pd.to_csv('file-name.csv, index=False)`<br>
-`df=pd.to_excel('file-name.xlsx, index=False)`<br>
-`df=pd.to_pickle('file_name.pkl')`
+`df.to_csv('file-name.csv, index=False)`<br>
+`df.to_excel('file-name.xlsx, index=False)`<br>
+`df.to_pickle('file_name.pkl')`
 
 ### 7- Depict top 10 rows (default number is 5)
 `df.head()`<br>
@@ -140,5 +140,7 @@
 `for index, row in df.iterrows():`<br>
   ....
 
-
+### 40- Depict some rows randomly
+`df.sample(n=3, random_state=65)` *if want to have same results in different excution, use random_state*<br>
+*to select 5 percent of whoel data frame:* `df.sample(frac=0.05)`
 
