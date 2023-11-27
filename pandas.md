@@ -11,12 +11,14 @@
 `df=pd.DataFrame({'id':[100,101,102], 'color':['red','blue','green']}, index=['a','b','c'])`
 
 ### 5- Read csv - xlsx file
-`df=pd.read_csv('file-name.csv)`<br>
-`df=pd.read_excel('file-name.xlsx)`
+`df=pd.read_csv('file-name.csv)`*to read just 10 rows:* `df=pd.read_csv('file_name.csv', nrows=10)` <br>
+`df=pd.read_excel('file-name.xlsx)` *to read just 10 rows:* `df=pd.read_excel('file_name.xlsx', nrows=10)`<br>
+`df=pd.read_pickle('file_name.pkl')`
 
 ### 6- Save csv - xlsx file
 `df=pd.to_csv('file-name.csv, index=False)`<br>
-`df=pd.to_excel('file-name.xlsx, index=False)`
+`df=pd.to_excel('file-name.xlsx, index=False)`<br>
+`df=pd.to_pickle('file_name.pkl')`
 
 ### 7- Depict top 10 rows (default number is 5)
 `df.head()`<br>
@@ -59,11 +61,11 @@
 ### 19- Remove any row contain Null values
 `df.dropna(how='any', inplace=True)`
 
-### 20- Remove Column namely "Age"
-`df.drop(['Age'], axis=1, inplace=True)`
+### 20- Remove Columns namely "Age" and "Name"
+`df.drop(['Age', 'Name'], axis=1, inplace=True)`
 
-### 21- Remove Row with index=0
-`df.drop(index=0, axis=0, inplace=True)`
+### 21- Remove Rows with index=0 and 2
+`df.drop([0, 2], axis=0, inplace=True)`
 
 ### 22- Replace A with another B in Column namely "Name"
 `df.Name.replace('A', 'B', inplace=True)` *or* `df.Name=df.Name.replace('A', 'B')`
@@ -133,6 +135,10 @@
 ### 38- Group data by a column value
 `df.groupby("Age")` *to count, mean, min, max, etc:* `df.groupby("Age").count()` *or* `df.groupby("Age").Name.sum()`<br>
 *to get more details based by groups:* `df.groupby("Age").Age.agg(["count", "sum", "min", "max"])`
+
+### 39- DataFrame Iteration
+`for index, row in df.iterrows():`<br>
+  ....
 
 
 
