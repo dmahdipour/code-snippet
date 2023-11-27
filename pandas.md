@@ -151,6 +151,6 @@
 ### 42- Depict Duplicated values
 `df.duplicated()` *or for checking column namely Age:* `df.Age.duplicated()`<br>
 *to get number of duplicated values:* `df.Age.duplicated().sum()`<br>
-*to remove duplicated values:* `df.drop_duplicated(inplace=True)`
+*to remove duplicated values:* `df.drop_duplicates(inplace=True)`
 
 
