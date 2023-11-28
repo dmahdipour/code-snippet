@@ -6,7 +6,8 @@
 
 ### 3- Define data frame (Table with 2 rows and 3 columns)
 `df=pd.DataFrame([100,101,102], [1,2])`<br>
-*to have indexed data frame:*`df=pd.DataFrame({'id':[100,101,102], 'color':['red','blue','green']}, index=['a','b','c'])`
+*to have indexed data frame:*<br>
+`df=pd.DataFrame({'id':[100,101,102], 'color':['red','blue','green']}, index=['a','b','c'])`
 
 ### 4- Read csv - xlsx file
 `df=pd.read_csv('file-name.csv)`*to read just 10 rows:* `df=pd.read_csv('file_name.csv', nrows=10)` <br>
@@ -103,23 +104,25 @@
 
 ### 29- Depict count, mean, std, min, etc of data or each columns
 `df.max()` *or* `df.Age.max()` *ro get index of them add arg to them:* `df.argmax()`<br>
-`df.Age.value_counts(dropna=False)` *if do not want to count null values, change it to True (default is True) -- for depicting in percantage mode (normalized), add `normalize=True`*
+`df.Age.value_counts(dropna=False)` *if do not want to count null values, change it to True (default is True)<br>
+*for depicting in percantage mode (normalized), add* `normalize=True`<br>
 *list of indexes* `df.Age.value_counts().index`<br>
 *list of values* `df.Age.value_counts().values`<br>
 *unique of values* `df.Age.uniques()`
 
 ### 30- Dammy variables
-*to change unique values of column Age:* `df.Age.map({1:'One', 2:'Two'})` *or* `df.Age={1:'One', 2:'Two'}`
+*to change unique values of column Age:* `df.Age.map({1:'One', 2:'Two'})` *or* `df.Age={1:'One', 2:'Two'}`<br>
 *to make a word bag specially for categories:* `df.get_dummies(df.Age)`
 
 ### 31- Choose the column Age as index of data frame
 `df.set_index("Age", inplace=True)`<br>
-*to remove the name of index column or assign a name:* `df.inedx.name="AgeIndex"` `df.index.name=None` 
+*to remove the name of index column or assign a name:* `df.inedx.name="AgeIndex"` `df.index.name=None`<br>
 *to reset index values (0~ ...):* `df.reset_index(inplace=True)`
 
 ### 32- Access to rows by index of them
 `df.iloc[[10, 30]]` *min, max, mean, argmax , etc can be used instead of list*<br>
-*to get value of special columns:* `df.iloc[[10]]["Age"]` *or* `df.iloc[[10]].Age` *or* `df.loc[10, "Age"]` *or* `df.at[10, "Age"]`
+*to get value of special columns:*<br> 
+`df.iloc[[10]]["Age"]` *or* `df.iloc[[10]].Age` *or* `df.loc[10, "Age"]` *or* `df.at[10, "Age"]`
 
 ### 33- Filter data frame by column namely Age value
 `df[df.Age>10]` *to filter by more than one columns:* `df(df.Age>10) & (df.Name.contains('A'))]`<br>
