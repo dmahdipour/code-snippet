@@ -49,7 +49,7 @@
 
 ### 14- Remove Null Values in column "Age"
 `df['Age'].dropna(how='all', inplace=True)`<br>
-* to remove any row contain Null values: `df.dropna(how='any', inplace=True)`
+*to remove any row contain Null values:* `df.dropna(how='any', inplace=True)`
 
 ### 15- Remove Columns namely "Age" and "Name" and Remove Rows with index=0 and 2
 `df.drop(['Age', 'Name'], axis=1, inplace=True)`<br>
