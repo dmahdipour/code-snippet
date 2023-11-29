@@ -134,8 +134,10 @@
 *to get more details based by groups:* `df.groupby("Age").Age.agg(["count", "sum", "min", "max"])`
 
 ### 35- DataFrame Iteration
-`for index, row in df.iterrows():`<br>
-  ....
+```
+for index, row in df.iterrows():`<br>
+  codes...
+```
 
 ### 36- Depict some rows randomly
 `df.sample(n=3, random_state=65)` *if want to have same results in different excution, use random_state*<br>
@@ -148,4 +150,11 @@
 *to remove duplicated values:* `df.drop_duplicates(inplace=True)`
 
 ### 38- Functions (keyword: apply)
-
+*to get lenghth of a column in string dtype:* `df['name_lenghth']=df.Name.apply(len)`<br>
+*to add 2 to Ages:*<br>
+```
+def get_element(num):
+  return num+2
+  
+df[temp_age]=df.temp_age.apply(get_element)
+```
