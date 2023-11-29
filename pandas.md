@@ -151,10 +151,25 @@ for index, row in df.iterrows():`<br>
 
 ### 38- Functions (keyword: apply)
 *to get lenghth of a column in string dtype:* `df['name_lenghth']=df.Name.apply(len)`<br>
-*to add 2 to Ages:*<br>
+*to add 2 to Ages:* `df.Age+=2` *to make it as a function:* <br>
 ```
 def get_element(num):
   return num+2
   
 df[temp_age]=df.temp_age.apply(get_element)
 ```
+*if want to change data more than 8 to 1 and less that it to 0:*
+```
+import numpy as np
+
+df=pd.DataFrame()
+df['temp_age']=np.where(df.Age>8 ,1 ,0)
+```
+*Choose 10 random samples of column Age with values greater than '50' and Name equal to 'Ali':*
+```
+df1=df[df.Age>1].sample(n=10)
+df2=df[df.Name=='Ali'].sample(n=10)
+
+df_all=pd.concat([df1,df2]).sample(frac=1)
+```
+
