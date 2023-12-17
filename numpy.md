@@ -70,7 +70,9 @@ for row in myArray:
 `np.sqrt(myArray)` *Also Ceil, Sin, Cos, Tan, Arcsin, Arccos, Arctan and etc. can be used.* <br> 
 *for more:* https://numpy.org/doc/stable/reference/routines.math.html <br><br>
 `myArray.dot(myArray2)` *or* `np.dot(myArray, myArray2)` *or* `np.matmul(myArray, myArray2)` <br>
-<ins>*number of column in first array should be equal to number of rows in second one. e.g. 2x**3**  and  **3**x5*</ins> <br>
+<ins>*number of column in first array should be equal to number of rows in second one. e.g. 2x**3**  and  **3**x5*</ins> <br><br>
 `np.linalg.det(myArray)` *To get Determinant, array should be squar in dimention. This is a kind of Algebra calculation (linalg).*
 
-### 13- Mixup Arrays
+### 13- Mixup Arrays (Whole arrays should have same dimentions)
+`np.vstack((myArray, myArray2))` *Mix to array together Vertically. Rows of second array come under the first one.* <br>
+`np.hstack((myArray, myArray2))` *Mix to array together Horizontally. Rows of second array come near the first one.* <br>
