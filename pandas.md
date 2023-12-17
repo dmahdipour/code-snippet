@@ -27,7 +27,7 @@
 
 ### 7- Depict column namely "Age" and 2nd row of it
 `df.Age` *or* `df['Age']`
-*indexs are started from 0* `df.['Age'][1]`
+*indexes are started from 0* `df.['Age'][1]`
 
 ### 08- Add New Column namely "id" from index values
 `df['id']=df.index`
