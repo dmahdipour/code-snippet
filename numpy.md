@@ -35,7 +35,7 @@ myArray=np.asarray(myList)
 ```
 
 ### 9- Built-in Functions
-***add axis=0 for finding values throught the columns and axis=1 for rows in 2D array*** <br>
+<ins>*Add axis=0 for finding values throught the columns and axis=1 for rows in 2D array*</ins> <br>
 `np.min(myArray, axis=0)` `np.max(myArray)` *get Min and Max* <br>
 `np.argmin(myArray)` `np.argmax(myArray, axis=1)` *get Min and Max items indexes* <br>
 `np.mean(myArray, axis=1)` *get average of whole items* <br>
