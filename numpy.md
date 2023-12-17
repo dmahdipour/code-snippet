@@ -15,7 +15,7 @@
 `np.zeros((3,4), dtyp=int)` *Whole numbers are 0 and for 1D array:* `np.zeros((3))` <br>
 `np.eye(3)` *Create ab array with whole 1 in diameter and fill others by 0* <br>
 `np.linspace(1,4, num=10)` *Create an 10 items array start from 1 end by 4* <br>
-`np.random.random((3,4))` *Create an array with random items between 3 and 4*
+`np.random.random((3,4))` *Create an array with random items between 3 and 4 or get 9 random integer numbers between 0 and 10* `np.random.randint(10, size=9).reshape(3,3)` 
 
 ### 5- Change Dimention's size of arrays
 `myArray=np.arange(12).reshape(3, 4)` *To revert 2D array to one:* `myArray.reshape(12)` *to convert it in 12 row:* `myArray.reshape(1,12)` <br>
@@ -67,8 +67,10 @@ for row in myArray:
 `myArray+10` *Plus 10 to items one by one. Also, Mines, Multipy, Division, Pow ,etc acan be used.* <br>
 `myArray + myArray2` *Sum items of 2 arrays one by one* <br>
 `myArray>2` *Get True if our condition are true for each one and vise verse. To get items instead of True/False:* `myArray[myArray>2]` <br>
-`np.sqrt(myArray)` *Also Ceil, Sin, Cos, Tan, Arcsin, Arccos, Arctan and etc. can be used. for more:* https://numpy.org/doc/stable/reference/routines.math.html <br>
+`np.sqrt(myArray)` *Also Ceil, Sin, Cos, Tan, Arcsin, Arccos, Arctan and etc. can be used.* <br> 
+*for more:* https://numpy.org/doc/stable/reference/routines.math.html <br><br>
 `myArray.dot(myArray2)` *or* `np.dot(myArray, myArray2)` *or* `np.matmul(myArray, myArray2)` <br>
-<ins>*number of column in first array should be equal to number of rows in second one. e.g. 2x**3**  and  **3**x5*</ins>
+<ins>*number of column in first array should be equal to number of rows in second one. e.g. 2x**3**  and  **3**x5*</ins> <br>
+`np.linalg.det(myArray)` *To get Determinant, array should be squar in dimention. This is a kind of Algebra calculation (linalg).*
 
-
+### 13- Mixup Arrays
