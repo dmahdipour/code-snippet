@@ -48,8 +48,9 @@
 `df['Age'].fillna(value=2, inplace=True)` *use inplace to make changes applyed - alternatiopn for inplace is:* `df['Age']=df['Age'].fillna(value=2)`
 
 ### 14- Remove Null Values in column "Age"
-`df['Age'].dropna(how='all', inplace=True)` <br>
-*to remove any row contain Null values:* `df.dropna(how='any', inplace=True)`
+*to remove any row that all of them are Null:* `df['Age'].dropna(how='all', inplace=True)` <br>
+*to remove any row contain even one Null values:* `df.dropna(how='any', inplace=True)` <br>
+*to remove any row contain 5 Null values:* `df.dropna(thresh=5, axis=1, inplace=True)` 
 
 ### 15- Remove Columns namely "Age" and "Name" and Remove Rows with index=0 and 2
 `df.drop(['Age', 'Name'], axis=1, inplace=True)` <br>
