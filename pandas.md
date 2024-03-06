@@ -11,6 +11,7 @@
 
 ### 4- Read csv - xlsx file
 `df=pd.read_csv('file-name.csv)`*to read just 10 rows:* `df=pd.read_csv('file_name.csv', nrows=10)` <br>
+*to conver some values to Null:* `missing_val = ["na", "n/a", "-"]` `df=pd.read_csv('file-name.csv, na_values=missing_val)`
 `df=pd.read_excel('file-name.xlsx)` *to read just 10 rows:* `df=pd.read_excel('file_name.xlsx', nrows=10)` <br>
 `df=pd.read_pickle('file_name.pkl')`
 
