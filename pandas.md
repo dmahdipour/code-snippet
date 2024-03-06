@@ -48,7 +48,7 @@
 `df['Age'].fillna(value=2, inplace=True)` *use inplace to make changes applyed - alternatiopn for inplace is:* `df['Age']=df['Age'].fillna(value=2)`
 
 ### 14- Remove Null Values in column "Age"
-*to remove any row that all of them are Null:* `df['Age'].dropna(how='all', inplace=True)` <br>
+*to remove any row that whole are Null:* `df['Age'].dropna(how='all', inplace=True)` <br>
 *to remove any row contain even one Null values:* `df.dropna(how='any', inplace=True)` <br>
 *to remove any row contain 5 Not Null values:* `df.dropna(thresh=5, axis=1, inplace=True)` 
 
@@ -57,7 +57,8 @@
 `df.drop([0, 2], axis=0, inplace=True)`
 
 ### 16- Count how many 2 values are in column "Age"
-`df[df.Age==2].count()`
+`df[df.Age==2].count()` <br>
+*To count them by multiple conditions:* `df[(df.Age>2) & (df.Age<10)].count()`
 
 ### 17- Replace A with another B in Column namely "Name"
 `df.Name.replace('A', 'B', inplace=True)` *or* `df.Name=df.Name.replace('A', 'B')`
