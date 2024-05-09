@@ -106,7 +106,7 @@
 `df.describe()` *for bit shorter info:* `df.info()`
 
 ### 29- Depict count, mean, std, min, etc of data or each columns
-`df.max()` *or* `df.Age.max()` *ro get index of them add arg to them:* `df.argmax()` <br>
+`df.max()` *or* `df.Age.max()` *to get index of them add arg to them:* `df.argmax()` <br>
 `df.Age.value_counts(dropna=False)` *if do not want to count null values, change it to True (default is True) <br>
 *for depicting in percantage mode (normalized), add* `normalize=True` <br>
 *list of indexes* `df.Age.value_counts().index` <br>
