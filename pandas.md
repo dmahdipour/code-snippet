@@ -7,7 +7,10 @@
 ### 3- Define data frame (Table with 2 rows and 3 columns)
 `df=pd.DataFrame([100,101,102], [1,2])` <br>
 *to have indexed data frame:* <br>
-`df=pd.DataFrame({'id':[100,101,102], 'color':['red','blue','green']}, index=['a','b','c'])`
+`df=pd.DataFrame({'id':[100,101,102], 'color':['red','blue','green']}, index=['a','b','c'])` <br>
+*to Define and Append data to it:* <br>
+`df=pd.DataFrame(columns=["col1", "col2", ...])` <br>
+`df.append({"col1":1, "col2":2, ...})`
 
 ### 4- Read csv - xlsx file
 `df=pd.read_csv('file-name.csv)`*to read just 10 rows:* `df=pd.read_csv('file_name.csv', nrows=10)` <br>
